@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,400&display=swap");
 @font-face {
   font-family: "adlery-pro-swash";
-  src: url("../fonts/Adlery-Swash-trial.ttf") format("woff"), url("../fonts/Adlery-Swash-trial.ttf") format("opentype"), url("../fonts/Adlery-Swash-trial.ttf") format("truetype"); }
+  src: url("fonts/Adlery-Swash-trial.ttf") format("woff"), url("fonts/Adlery-Swash-trial.ttf") format("opentype"), url("fonts/Adlery-Swash-trial.ttf") format("truetype"); }
 
 * {
   padding: 0;
