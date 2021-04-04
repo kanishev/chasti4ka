@@ -6,6 +6,7 @@ const concat = require('gulp-concat')
 const autoprefixer = require('gulp-autoprefixer')
 const sync = require('browser-sync').create()
 const imageResize = require('gulp-image-resize');
+const imagemin = require('gulp-imagemin')
 
 
 function images() {
@@ -13,7 +14,11 @@ function images() {
     .pipe(gulp.dest('dist/images'))
 };
 
-
+function imageMin(){
+    return gulp.src('src/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/images'))
+}
  
 function resize() {
   return gulp.src('src/images/{logo.png, star.png}')
@@ -78,6 +83,6 @@ function serve() {
 
 
 
-exports.build = gulp.series(clear, scss, html, pages, images, resize, fonts)
-exports.serve = gulp.series(clear, scss, html, pages, fonts, images, resize, serve)
+exports.build = gulp.series(clear, scss, html, pages, images, resize, imageMin, fonts)
+exports.serve = gulp.series(clear, scss, html, pages, fonts, images, resize, imageMin, serve)
 exports.clear = clear
