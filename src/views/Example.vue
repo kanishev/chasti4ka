@@ -71,7 +71,6 @@ export default {
   },
   methods: {
     createUrls() {
-      console.log(this.imageCount)
       for (let i = 0; i < this.imageCount; i++) {
         this.pageUrls[i] = require(`../images/portfolio/${this.pageName}-${
           i + 1

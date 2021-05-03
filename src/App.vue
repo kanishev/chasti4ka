@@ -4,7 +4,7 @@
       <div class="container">
         <div class="header-navigate">
           <div class="logo">
-            <a href="/chasti4ka">
+            <a href="/">
               <img src="./images/logo.png" alt="logo" width="107" height="auto"/>
             </a>
           </div>
@@ -28,7 +28,7 @@
               </li>
               <li class="navbar-list__item">
                 <router-link class="navbar-list__link" to="/contact"
-                  >Contact</router-link
+                  >Contacts</router-link
                 >
               </li>
             </ul>
