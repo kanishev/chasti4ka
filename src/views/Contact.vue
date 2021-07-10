@@ -7,10 +7,12 @@
           <div class="contacts-info">
             <p class="contacts-info__text">связаться со мной:</p>
             <p class="contacts-info__text">
-              <a href="tel:+79148465850">+7(914)-846-58-50</a>
+              <a href="tel:+79221884640">+7(922)-188-46-40</a>
             </p>
             <p class="contacts-info__text contacts-info__mail">
-              <a href="mailto:darima.boltyrova@gmail.com">darima.boltyrova@gmail.com</a>
+              <a href="mailto:darima.boltyrova@gmail.com"
+                >darima.boltyrova@gmail.com</a
+              >
             </p>
             <img
               class="contacts-info__img"
@@ -62,7 +64,13 @@
                   >Заявка успешно отправлена</small
                 >
               </transition>
-              <button class="contacts-form__btn btn" :disabled="isDisabled" :style="{'background-color': isDisabled ? '#efefef' : ''}">отправить</button>
+              <button
+                class="contacts-form__btn btn"
+                :disabled="isDisabled"
+                :style="{ 'background-color': isDisabled ? '#efefef' : '' }"
+              >
+                отправить
+              </button>
             </form>
           </div>
         </div>
@@ -115,7 +123,8 @@ export default {
       return res;
     },
     validEmail(email) {
-      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      var re =
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email);
     },
     sendEmail(e) {
@@ -135,7 +144,7 @@ export default {
 
             setTimeout(() => {
               this.success = false;
-              this.isDisabled = false
+              this.isDisabled = false;
             }, 5000);
           });
       } else {

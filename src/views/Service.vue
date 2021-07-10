@@ -128,7 +128,7 @@
               <div class="price-header__title">"стандарт"</div>
               <div class="price-header__count">10 000 руб</div>
               <div class="price-header__limits">
-                сроки выполнения: 2 - 2,5 недели
+                сроки выполнения: 2 - 4 недели
               </div>
               <div class="price-header__text">
                 Полноценная разработка логотипа с элементами фир. стиля.
@@ -168,7 +168,7 @@
               <div class="price-header__title">"бизнес"</div>
               <div class="price-header__count">20 000 руб</div>
               <div class="price-header__limits">
-                сроки выполнения: 4 - 6 недель
+                сроки выполнения: от 1 месяца
               </div>
               <div class="price-header__text">
                 Полноценная разработка логотипа с элементами фир.стиля.
