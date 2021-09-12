@@ -10,10 +10,11 @@ export default function getInstagramPosts() {
     .then((resp) => {
       return resp.json()
     })
-    .then(() => {
+    .then((data) => {
+      console.log(data)
       var feed = new Instafeed({
         get: "tagged",
-        accessToken: keys.instaToken,
+        accessToken: data.Token,
         limit: 6,
         template: `
               <div class="insta-post">
@@ -23,10 +24,9 @@ export default function getInstagramPosts() {
                 <p class="insta-post__text">{{caption}}</p>
                 </a>
               </div>
-           
+
         `,
       })
-      console.log(feed)
       feed.run()
     })
 }

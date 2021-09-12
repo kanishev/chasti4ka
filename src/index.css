@@ -655,8 +655,7 @@ button:hover {
 
 .section-example .example-another__one {
   width: 100%;
-  height: auto;
-  height: inherit;
+  min-height: 180px;
 }
 
 .section-example .example-another__one:hover {
@@ -672,7 +671,7 @@ button:hover {
   margin: 25px 0;
 }
 .section-about .about-text {
-  max-width: 420px;
+  max-width: 430px;
   margin: 0 auto;
   text-align: center;
 }

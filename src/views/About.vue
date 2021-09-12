@@ -113,7 +113,7 @@ export default {
   flex-basis: 30%;
   height: 300px;
   margin-bottom: 30px;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .insta-post__link {
@@ -121,7 +121,7 @@ export default {
   display: inline-block;
   height: 300px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 30px;
 }
 
