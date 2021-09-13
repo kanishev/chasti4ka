@@ -44,25 +44,32 @@ export default {
       toggler: false,
       imageCount: 0,
       pageName: "",
-      pagesList: ["paporotnik", "kerkemeli", "swag", "orduk"],
+      pagesList: [
+        "paporotnik",
+        "kerkemeli",
+        "swag",
+        "orduk",
+        "altai",
+        "visota",
+      ],
       nextPage: null,
       prevPage: null,
       pageUrls: [],
       imageOrder: 0,
+      arr: [],
     };
   },
   created() {
     this.pageName = this.$route.params.id;
     this.getImageCount();
     this.getNextPrevPages();
-    this.createUrls()
-   
+    this.createUrls();
   },
   beforeUpdate() {
     this.pageName = this.$route.params.id;
     this.getImageCount();
     this.getNextPrevPages();
-    this.createUrls()
+    this.createUrls();
   },
   computed: {
     filteredList() {
