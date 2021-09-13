@@ -56,6 +56,7 @@ export default {
       prevPage: null,
       pageUrls: [],
       imageOrder: 0,
+      arr: [],
     };
   },
   created() {

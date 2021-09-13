@@ -10,7 +10,9 @@
           >
             <img
               class="portfolio-item__img"
-              src="../images/portfolio/paporotnik-cover.jpg"
+              v-lazy
+              src="../images/lazy-small.jpeg"
+              :data-src="require('../images/portfolio/paporotnik-cover.jpg')"
               alt="paporotnik"
               height="400"
             />
@@ -22,7 +24,9 @@
           >
             <img
               class="portfolio-item__img"
-              src="../images/portfolio/kerkemeli-cover.jpg"
+              v-lazy
+              src="../images/lazy-small.jpeg"
+              :data-src="require('../images/portfolio/kerkemeli-cover.jpg')"
               alt="kerkemeli"
               height="400"
             />
@@ -36,7 +40,9 @@
           >
             <img
               class="portfolio-item__img"
-              src="../images/portfolio/swag-cover.jpg"
+              v-lazy
+              src="../images/lazy-small.jpeg"
+              :data-src="require('../images/portfolio/swag-cover.jpg')"
               alt="swagAir"
               height="400"
             />
@@ -48,7 +54,9 @@
           >
             <img
               class="portfolio-item__img"
-              src="../images/portfolio/orduk-cover.jpg"
+              v-lazy
+              src="../images/lazy-small.jpeg"
+              :data-src="require('../images/portfolio/orduk-cover.jpg')"
               alt="swagAir"
               height="400"
             />
@@ -60,7 +68,9 @@
           >
             <img
               class="portfolio-item__img"
-              src="../images/portfolio/visota-cover.jpg"
+              v-lazy
+              src="../images/lazy-small.jpeg"
+              :data-src="require('../images/portfolio/visota-cover.jpg')"
               alt="visota"
               height="400"
             />
@@ -73,9 +83,11 @@
             @click="$router.push(`/portfolio/altai`)"
           >
             <img
+              v-lazy
+              src="../images/lazy-small.jpeg"
               class="portfolio-item__img"
-              src="../images/portfolio/altai-cover.jpg"
-              alt="visota"
+              :data-src="require('../images/portfolio/altai-cover.jpg')"
+              alt="altai"
               height="400"
             />
             <h2 class="portfolio-item__text">
@@ -87,3 +99,13 @@
     </section>
   </main>
 </template>
+
+<script>
+import lazy from "../directives/lazy";
+
+export default {
+  directives: {
+    lazy,
+  },
+};
+</script>
