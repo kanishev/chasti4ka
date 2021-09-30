@@ -56,8 +56,14 @@
           </div>
 
           <div class="home-btn animate__animated animate__zoomIn">
-            <button class="btn" @click="$router.push('/portfolio')">
+            <button
+              class="btn home-btn__one"
+              @click="$router.push('/portfolio')"
+            >
               Смотреть проекты
+            </button>
+            <button class="btn home-btn__one" @click="$router.push('/contact')">
+              Связаться со мной
             </button>
           </div>
         </div>
@@ -67,12 +73,12 @@
 </template>
 
 <script>
-import animateLetter from '../utlis/animations'
+import animateLetter from "../utlis/animations";
 
 export default {
   name: "Home",
   mounted() {
-   animateLetter()
+    animateLetter();
   },
 };
 </script>

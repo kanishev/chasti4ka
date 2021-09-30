@@ -94,6 +94,10 @@
               Ару Алтай - туристический комплекс
             </h2>
           </div>
+
+          <button class="btn" @click="$router.push('/contact')">
+            связаться со мной
+          </button>
         </div>
       </div>
     </section>

@@ -23,11 +23,16 @@
           </div>
         </div>
 
+        <button class="btn example__btn" @click="$router.push('/contact')">
+          связаться со мной
+        </button>
+
         <Lightbox
           :order="imageOrder"
           :urls="pageUrls"
           :toggler="toggler"
         ></Lightbox>
+
         <Slider :pageList="filteredList"></Slider>
       </div>
     </section>
@@ -120,3 +125,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.example__btn {
+  margin: 60px 0;
+}
+</style>

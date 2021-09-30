@@ -59,13 +59,13 @@
 
           <div class="about-btns">
             <button
-              class="about-btns__btn btn"
+              class="btn about-btns__btn"
               @click="$router.push('/portfolio')"
             >
               проекты
             </button>
             <button
-              class="about-btns__btn btn"
+              class="btn about-btns__btn"
               @click="$router.push('/contact')"
             >
               контакты
@@ -76,11 +76,20 @@
         <h2 class="section-title">Мой инстаграм</h2>
         <Preloader v-if="preloader" />
         <div id="instafeed"></div>
+
+        <a
+          class="btn btn-follow"
+          href="https://www.instagram.com/chastichka_designer"
+          target="_blank"
+          rel="noopener"
+          aria-label="instagram"
+        >
+          follow me
+        </a>
       </div>
     </section>
   </main>
 </template>
-
 
 <script>
 import Preloader from "../components/Preloader.vue";
@@ -107,6 +116,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
 
 .insta-post {
