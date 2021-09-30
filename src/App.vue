@@ -5,7 +5,12 @@
         <div class="header-navigate">
           <div class="logo">
             <a href="/">
-              <img src="./images/logo.png" alt="logo" width="107" height="auto"/>
+              <img
+                src="./images/logo.png"
+                alt="logo"
+                width="107"
+                height="auto"
+              />
             </a>
           </div>
 
@@ -168,7 +173,7 @@
               <li class="socials-list__item">
                 <a
                   class="socials-list__link"
-                  href="https://www.instagram.com/chasti4ka_designer"
+                  href="https://www.instagram.com/chastichka_designer"
                   target="_blank"
                   rel="noopener"
                   aria-label="instagram"

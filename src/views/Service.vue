@@ -229,10 +229,7 @@
             </p>
           </div>
 
-          <button
-            class="conditionals__btn btn"
-            @click="$router.push('/contact')"
-          >
+          <button class="btn" @click="$router.push('/contact')">
             связаться со мной
           </button>
         </div>
