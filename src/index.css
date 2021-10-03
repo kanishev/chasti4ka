@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,400&display=swap");
-@font-face {
-  font-family: "adlery-pro-swash";
-  src: url("fonts/Adlery-Swash-trial.ttf") format("woff"),
-    url("fonts/Adlery-Swash-trial.ttf") format("opentype"),
-    url("fonts/Adlery-Swash-trial.ttf") format("truetype");
-  font-display: swap;
-}
 
 * {
   padding: 0;
@@ -388,6 +381,16 @@ button:hover {
   color: #2a2a2a;
   font-weight: 500;
 }
+
+.footer .copyright-reserved {
+  display: flex;
+  align-items: center;
+}
+
+.footer .copyright__link-reserved {
+  margin-left: 5px;
+  letter-spacing: normal;
+}
 @media screen and (max-width: 768px) {
   .footer .copyright__link-link {
     font-size: 11px;
@@ -396,11 +399,10 @@ button:hover {
     outline: none;
   }
 }
-@media screen and (max-width: 768px) {
-  .footer .copyright {
-    margin-bottom: 10px;
-  }
+.footer .socials {
+  width: 260px;
 }
+
 .footer .socials-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,6 +421,11 @@ button:hover {
   justify-content: center;
 }
 @media screen and (max-width: 768px) {
+  .footer .socials-list {
+    justify-content: center;
+    margin: 10px;
+  }
+
   .footer .socials-list__item {
     margin: 0 10px;
   }
@@ -465,6 +472,16 @@ button:hover {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 769px) {
+  .home-btn {
+    flex-direction: column;
+  }
+
+  .home-btn__one {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -608,10 +625,6 @@ button:hover {
   cursor: pointer;
 }
 
-.section-portfolio .portfolio-item:hover {
-  transform: scale(1.01);
-}
-
 .section-portfolio .portfolio-item__img {
   max-width: 450px;
   height: auto;
@@ -628,6 +641,10 @@ button:hover {
   color: #2a2a2a;
   letter-spacing: 3px;
   margin-top: 25px;
+}
+
+.portfolio__btn {
+  margin: auto;
 }
 
 @media screen and (max-width: 1200px) {

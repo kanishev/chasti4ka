@@ -2,9 +2,9 @@
   <main>
     <section class="section-portfolio">
       <div class="container portfolio-container">
-        <h2 style="display: none">section title</h2>
+        <figcaption style="display: none">section title</figcaption>
         <div class="portfolio">
-          <div
+          <figure
             class="portfolio-item animate__animated animate__fadeInUp"
             @click="$router.push(`/portfolio/paporotnik`)"
           >
@@ -16,9 +16,11 @@
               alt="paporotnik"
               height="400"
             />
-            <h2 class="portfolio-item__text">paporotnik - эко-пространство</h2>
-          </div>
-          <div
+            <figcaption class="portfolio-item__text">
+              paporotnik - эко-пространство
+            </figcaption>
+          </figure>
+          <figure
             class="portfolio-item animate__animated animate__fadeInUp"
             @click="$router.push(`/portfolio/kerkemeli`)"
           >
@@ -30,11 +32,11 @@
               alt="kerkemeli"
               height="400"
             />
-            <h2 class="portfolio-item__text">
+            <figcaption class="portfolio-item__text">
               kerkemeli - мастерская украшений
-            </h2>
-          </div>
-          <div
+            </figcaption>
+          </figure>
+          <figure
             class="portfolio-item animate__animated animate__fadeInUp"
             @click="$router.push(`/portfolio/swag`)"
           >
@@ -46,9 +48,11 @@
               alt="swagAir"
               height="400"
             />
-            <h2 class="portfolio-item__text">swag air - студия детейлинга</h2>
-          </div>
-          <div
+            <figcaption class="portfolio-item__text">
+              swag air - студия детейлинга
+            </figcaption>
+          </figure>
+          <figure
             class="portfolio-item animate__animated animate__fadeInUp"
             @click="$router.push(`/portfolio/orduk`)"
           >
@@ -60,9 +64,11 @@
               alt="swagAir"
               height="400"
             />
-            <h2 class="portfolio-item__text">orduk - камуфляжные костюмы</h2>
-          </div>
-          <div
+            <figcaption class="portfolio-item__text">
+              orduk - камуфляжные костюмы
+            </figcaption>
+          </figure>
+          <figure
             class="portfolio-item animate__animated animate__fadeInUp"
             @click="$router.push(`/portfolio/visota`)"
           >
@@ -74,11 +80,11 @@
               alt="visota"
               height="400"
             />
-            <h2 class="portfolio-item__text">
+            <figcaption class="portfolio-item__text">
               Высота - туристический глемпинг
-            </h2>
-          </div>
-          <div
+            </figcaption>
+          </figure>
+          <figure
             class="portfolio-item animate__animated animate__fadeInUp"
             @click="$router.push(`/portfolio/altai`)"
           >
@@ -90,12 +96,12 @@
               alt="altai"
               height="400"
             />
-            <h2 class="portfolio-item__text">
+            <figcaption class="portfolio-item__text">
               Ару Алтай - туристический комплекс
-            </h2>
-          </div>
+            </figcaption>
+          </figure>
 
-          <button class="btn" @click="$router.push('/contact')">
+          <button class="btn portfolio__btn" @click="$router.push('/contact')">
             связаться со мной
           </button>
         </div>
