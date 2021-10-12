@@ -136,7 +136,7 @@
               <li class="socials-list__item">
                 <a
                   class="socials-list__link"
-                  href="https://t.me/chasti4ka"
+                  href="https://t.me/chasti4ka_designer"
                   target="_blank"
                   rel="noopener"
                   aria-label="telegram"
@@ -147,7 +147,7 @@
               <li class="socials-list__item">
                 <a
                   class="socials-list__link"
-                  href="https://wa.me/79148465850"
+                  href="https://wa.me/79221184640"
                   target="_blank"
                   rel="noopener"
                   aria-label="whatsapp"
@@ -171,8 +171,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: "Home",
   data() {
