@@ -44,6 +44,7 @@
             tabindex="0"
             class="menu-btn"
             @click="$emit('toggleMenu', true)"
+            @keypress="$emit('toggleMenu', true)"
             v-show="!this.showMenu"
           >
             <div class="menu-btn__burger"></div>
