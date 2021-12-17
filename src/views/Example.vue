@@ -13,7 +13,7 @@
               @click="(toggler = !toggler), (imageOrder = idx + 1)"
               :src="
                 require(`../images/portfolio/${$route.params.id}-${
-                  idx + 1
+                  +idx + 1
                 }.jpg`)
               "
               alt="exampleImage"
