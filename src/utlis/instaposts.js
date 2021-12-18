@@ -1,5 +1,5 @@
-import Instafeed from "instafeed.js"
-import keys from "./keys"
+import Instafeed from "instafeed.js";
+import keys from "./keys";
 
 export default function getInstagramPosts() {
   return fetch(keys.instaAdress, {
@@ -8,10 +8,10 @@ export default function getInstagramPosts() {
     },
   })
     .then((resp) => {
-      return resp.json()
+      return resp.json();
     })
     .then((data) => {
-      console.log(data)
+      console.log(data);
       var feed = new Instafeed({
         get: "tagged",
         accessToken: data.Token,
@@ -19,14 +19,14 @@ export default function getInstagramPosts() {
         template: `
               <div class="insta-post">
               <a href="{{link}}" class="insta-post__link">
-                <img src="insta.png" alt="" class="insta-post__icon"/>
-                <img src="{{image}}" class="insta-post__image" alt="swagAir" >
+                <img src="insta.png" alt="icon" class="insta-post__icon"/>
+                <img src="{{image}}" class="insta-post__image" alt="image" >
                 <p class="insta-post__text">{{caption}}</p>
                 </a>
               </div>
 
         `,
-      })
-      feed.run()
-    })
+      });
+      feed.run();
+    });
 }
