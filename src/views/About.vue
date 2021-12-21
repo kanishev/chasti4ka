@@ -10,11 +10,15 @@
                 src="../images//star.png"
                 alt="star-top"
               />
-              <img
-                class="image-wrapper__main"
-                src="../images/about-image.jpg"
-                alt="about-image"
-              />
+              <picture>
+                <source srcset="../images/about-image.webp" type="image/webp" />
+                <img
+                  id="hello"
+                  class="image-wrapper__main"
+                  src="../images/about-image.jpg"
+                  alt="about-image"
+                />
+              </picture>
 
               <div class="image-wrapper__bottom">
                 <img
