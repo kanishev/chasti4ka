@@ -8,7 +8,6 @@ Simple porfolio web app for [Chastichka](https://chastichkadesign.ru) designer
 
 - 🌍 [Instagram API](https://developers.facebook.com/docs/instagram-api)
 - ✉️ [emailJS](https://www.emailjs.com)
--
 
 ## Demo
 
