@@ -91,10 +91,13 @@
         <div class="price">
           <div class="price-block">
             <div class="price-header">
+              <div class="price-rate">
+                <img src="../images/star.png" width="25px" alt="star" />
+              </div>
               <div class="price-header__title">"стартап"</div>
-              <div class="price-header__count">5000 руб</div>
+              <div class="price-header__count">7500 руб</div>
               <div class="price-header__limits">
-                сроки выполнения: 1 - 1,5 недели
+                сроки выполнения: 1 - 2 недели
               </div>
               <div class="price-header__text">
                 Разработка логотипа на основе вашего задания, примера, эскиза.
@@ -116,7 +119,6 @@
                 (jpg, png, eps, pdf) <br />
                 версии в фирменных цветах, разных фонах
               </p>
-              <p>логобук - руководство по использованию</p>
               <p>
                 50% предоплата <br />
                 (не возвращается)
@@ -125,8 +127,13 @@
           </div>
           <div class="price-block">
             <div class="price-header">
+              <div class="price-rate">
+                <img src="../images/star.png" width="25px" alt="star" />
+                <img src="../images/star.png" width="25px" alt="star" />
+              </div>
+
               <div class="price-header__title">"стандарт"</div>
-              <div class="price-header__count">10 000 руб</div>
+              <div class="price-header__count">12 500 руб</div>
               <div class="price-header__limits">
                 сроки выполнения: 2 - 4 недели
               </div>
@@ -145,6 +152,7 @@
                 (внутри предложенного варианта)
               </p>
               <p>
+                - основная и доп. версии лого <br />
                 - подбор фирменных шрифтов <br />
                 - подбор фирменных цветов <br />
                 - фирменный паттерн (узор)
@@ -156,7 +164,8 @@
                 версии в фирменных цветах, разных фонах
               </p>
 
-              <p>логобук - руководство по использованию</p>
+              <p class="price-info__bonus">Бонус:</p>
+              <p>+ логобук - руководство по использованию логотипа</p>
               <p>
                 50% предоплата <br />
                 (не возвращается)
@@ -165,13 +174,18 @@
           </div>
           <div class="price-block">
             <div class="price-header">
+              <div class="price-rate">
+                <img src="../images/star.png" width="25px" alt="star" />
+                <img src="../images/star.png" width="25px" alt="star" />
+                <img src="../images/star.png" width="25px" alt="star" />
+              </div>
               <div class="price-header__title">"бизнес"</div>
-              <div class="price-header__count">20 000 руб</div>
+              <div class="price-header__count">24 500 руб</div>
               <div class="price-header__limits">
                 сроки выполнения: от 1 месяца
               </div>
               <div class="price-header__text">
-                Полноценная разработка логотипа с элементами фир.стиля.
+                Полноценная разработка логотипа c фирменным стилем.
               </div>
             </div>
             <div class="price-info">
@@ -186,8 +200,10 @@
               </p>
 
               <p>
+                - основная и доп. версии лого <br />
                 - фирменные паттерн, шрифты, цвета <br />
-                - базовые носители стиля (визитка, бланк, конверт, открытка)
+                - 3 базовых носителя стиля (визитка, бланк, конверт, открытка, и
+                тд.)
                 <br />
                 - фирменная полиграфия (цена рассчитывается от объема) <br />
                 - оформление социальных сетей (посты 6 шт, хайлайты, аватар)
@@ -198,14 +214,68 @@
                 (jpg, png, eps, pdf) <br />
                 версии в фирменных цветах, разных фонах
               </p>
-              <p>логобук - руководство по использованию</p>
+              <p>
+                Гайдлайн - руководство по использованию лого и форменного стиля
+              </p>
               <p>
                 50% предоплата <br />
                 (не возвращается)
               </p>
             </div>
           </div>
+
+          <div class="price-block price-block--center">
+            <div class="price-header">
+              <div class="price-header__title">полиграфия</div>
+              <div class="price-header__limits">
+                сроки выполнения: индивидуально
+              </div>
+              <div class="price-header__text">
+                Разработка дизайна и стоимость иных рекламных носителей
+                уточняйте лично
+              </div>
+            </div>
+            <div class="price-info price-info--center">
+              <div class="price-info__block">
+                <p>
+                  - Визитка от
+                  <span class="price-info__value"> 2000 руб. </span> <br />
+                  - Сертификат от
+                  <span class="price-info__value"> 2000 руб. </span> <br />
+                  - Пригласительные от
+                  <span class="price-info__value"> 1500 руб. </span> <br />
+                  - Открытки от
+                  <span class="price-info__value"> 1000-2000 руб. </span> <br />
+                  - Стикеры (индивидуально)
+                </p>
+              </div>
+              <div class="price-info__block">
+                <p>
+                  - Наклейки от
+                  <span class="price-info__value"> 1000 руб.</span> <br />
+                  - Листовки
+                  <span class="price-info__value"> 1000-1500 руб.</span> <br />
+                  - Афишы
+                  <span class="price-info__value"> 1000-2000 руб.</span> <br />
+                  - Буклеты
+                  <span class="price-info__value"> 2000 руб.</span> (зависит от
+                  страниц) <br />
+                  - Меню, прайс
+                  <span class="price-info__value"> 2000 руб </span>(зависит от
+                  страниц)
+                </p>
+              </div>
+              <div class="price-info__block price-info__block--bonus">
+                <p class="price-info__bonus">Бонус:</p>
+                <p>
+                  + рекомендации по изготовлению печатной продукции <br />
+                  (помощь в выборе бумаги, подбору способа нанесения)
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+
         <h2 class="section-title">Условия</h2>
         <div class="conditionals">
           <div class="conditionals__text">

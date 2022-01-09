@@ -60,7 +60,7 @@
           <img src="../images/copyright.svg" alt="copyright" />
 
           <p class="copyright__link copyright__link-reserved">
-            2021 All Rights Reserved
+            2022 All Rights Reserved
           </p>
         </div>
       </div>

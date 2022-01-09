@@ -17,22 +17,22 @@
           <ul class="navbar-list">
             <li class="navbar-list__item">
               <router-link class="navbar-list__link" to="/portfolio"
-                >Projects</router-link
+                >Проекты</router-link
               >
             </li>
             <li class="navbar-list__item">
               <router-link class="navbar-list__link" to="/about"
-                >About</router-link
+                >Обо мне</router-link
               >
             </li>
             <li class="navbar-list__item">
               <router-link class="navbar-list__link" to="/service"
-                >Service</router-link
+                >Услуги</router-link
               >
             </li>
             <li class="navbar-list__item">
               <router-link class="navbar-list__link" to="/contact"
-                >Contacts</router-link
+                >Контакты</router-link
               >
             </li>
           </ul>

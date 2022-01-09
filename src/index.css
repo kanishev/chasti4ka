@@ -140,7 +140,7 @@ button:hover {
   font-size: 30px;
   letter-spacing: 7.2px;
   text-transform: uppercase;
-  margin: 70px 0 70px 0;
+  margin: 70px 0 50px 0;
 }
 @media (max-width: 576px) {
   .section-title {
@@ -1176,13 +1176,46 @@ button:hover {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 20px auto;
+  margin: 10px 0;
 }
+
+.section-service .price-block--center {
+  -ms-flex-direction: row;
+  flex-direction: row;
+  max-width: none;
+}
+
 .section-service .price-header {
-  padding: 30px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: #2a2a2a;
   color: #fff;
 }
+
+.section-service .price-block--center .price-header {
+  width: 450px;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-service .price-block--center {
+    max-width: 320px;
+    flex-direction: column;
+  }
+
+  .section-service .price-block--center .price-header {
+    max-width: 450px;
+    width: auto;
+    padding: 75px 0;
+  }
+
+  .section-service .price-info--center {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
 .section-service .price-header__title {
   text-transform: uppercase;
   font-size: 20px;
@@ -1228,6 +1261,16 @@ button:hover {
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
+
+.section-service .price-info--center {
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
 .section-service .price-info p {
   margin-bottom: 20px;
   font-size: 13px;
@@ -1235,10 +1278,41 @@ button:hover {
   color: #000;
   font-weight: 300;
 }
+
+.section-service .price-info__block {
+  text-align: start;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-service .price-info--center {
+    flex-wrap: nowrap;
+    padding: 30px;
+    background: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-grow: 1;
+  }
+
+  .section-service .price-info__block {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .section-service .price {
     margin-bottom: 40px;
   }
+}
+
+.price-rate {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.price-rate img {
+  margin: 0 5px;
 }
 
 .section-service .conditionals {
@@ -1253,4 +1327,14 @@ button:hover {
   margin-bottom: 20px;
   font-weight: 300;
   font-size: 13px;
+}
+
+.section-service .price-info__value {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.section-service p.price-info__bonus {
+  margin-bottom: 5px;
+  text-align: center;
 }
