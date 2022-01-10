@@ -1207,12 +1207,16 @@ button:hover {
   .section-service .price-block--center .price-header {
     max-width: 450px;
     width: auto;
-    padding: 75px 0;
+    padding: 77px 0;
   }
 
   .section-service .price-info--center {
     flex-wrap: nowrap;
     justify-content: center;
+  }
+
+  .section-service .price {
+    justify-content: space-around;
   }
 }
 
