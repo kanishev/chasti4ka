@@ -60,22 +60,22 @@
           >
             <li @click="$emit('toggleMenu', false)">
               <router-link class="hamburger-menu__box-item" to="/portfolio"
-                >Projects</router-link
+                >Проекты</router-link
               >
             </li>
             <li @click="$emit('toggleMenu', false)">
               <router-link class="hamburger-menu__box-item" to="/about"
-                >About</router-link
+                >Обо мне</router-link
               >
             </li>
             <li @click="$emit('toggleMenu', false)">
               <router-link class="hamburger-menu__box-item" to="/service"
-                >Service</router-link
+                >Услуги</router-link
               >
             </li>
             <li @click="$emit('toggleMenu', false)">
               <router-link class="hamburger-menu__box-item" to="/contact"
-                >Contact</router-link
+                >Контакты</router-link
               >
             </li>
             <button
