@@ -6,6 +6,56 @@
         <div class="portfolio">
           <figure
             tabindex="0"
+            @keypress="$router.push(`/portfolio/luka`)"
+            class="portfolio-item animate__animated animate__fadeInUp"
+            @click="$router.push(`/portfolio/luka`)"
+          >
+            <picture>
+              <source
+                srcset="../images/portfolio/luka-cover.webp"
+                type="image/webp"
+              />
+              <img
+                v-lazy
+                src="../images/lazy-small.jpeg"
+                class="portfolio-item__img"
+                :data-src="require('../images/portfolio/luka-cover.jpg')"
+                alt="altai"
+                height="400"
+              />
+            </picture>
+            <figcaption class="portfolio-item__text">
+              Святой Лука - византийский хор
+            </figcaption>
+          </figure>
+
+          <figure
+            tabindex="0"
+            @keypress="$router.push(`/portfolio/altai`)"
+            class="portfolio-item animate__animated animate__fadeInUp"
+            @click="$router.push(`/portfolio/altai`)"
+          >
+            <picture>
+              <source
+                srcset="../images/portfolio/altai-cover.webp"
+                type="image/webp"
+              />
+              <img
+                v-lazy
+                src="../images/lazy-small.jpeg"
+                class="portfolio-item__img"
+                :data-src="require('../images/portfolio/altai-cover.jpg')"
+                alt="altai"
+                height="400"
+              />
+            </picture>
+            <figcaption class="portfolio-item__text">
+              Ару Алтай - туристический комплекс
+            </figcaption>
+          </figure>
+
+          <figure
+            tabindex="0"
             @keypress="$router.push(`/portfolio/paporotnik`)"
             class="portfolio-item animate__animated animate__fadeInUp"
             @click="$router.push(`/portfolio/paporotnik`)"
@@ -50,6 +100,30 @@
             </picture>
             <figcaption class="portfolio-item__text">
               kerkemeli - мастерская украшений
+            </figcaption>
+          </figure>
+          <figure
+            tabindex="0"
+            @keypress="$router.push(`/portfolio/visota`)"
+            class="portfolio-item animate__animated animate__fadeInUp"
+            @click="$router.push(`/portfolio/visota`)"
+          >
+            <picture>
+              <source
+                srcset="../images/portfolio/visota-cover.webp"
+                type="image/webp"
+              />
+              <img
+                class="portfolio-item__img"
+                v-lazy
+                src="../images/lazy-small.jpeg"
+                :data-src="require('../images/portfolio/visota-cover.jpg')"
+                alt="visota"
+                height="400"
+              />
+            </picture>
+            <figcaption class="portfolio-item__text">
+              Высота - туристический глемпинг
             </figcaption>
           </figure>
           <figure
@@ -100,59 +174,10 @@
               orduk - камуфляжные костюмы
             </figcaption>
           </figure>
-          <figure
-            tabindex="0"
-            @keypress="$router.push(`/portfolio/visota`)"
-            class="portfolio-item animate__animated animate__fadeInUp"
-            @click="$router.push(`/portfolio/visota`)"
-          >
-            <picture>
-              <source
-                srcset="../images/portfolio/visota-cover.webp"
-                type="image/webp"
-              />
-              <img
-                class="portfolio-item__img"
-                v-lazy
-                src="../images/lazy-small.jpeg"
-                :data-src="require('../images/portfolio/visota-cover.jpg')"
-                alt="visota"
-                height="400"
-              />
-            </picture>
-            <figcaption class="portfolio-item__text">
-              Высота - туристический глемпинг
-            </figcaption>
-          </figure>
-          <figure
-            tabindex="0"
-            @keypress="$router.push(`/portfolio/altai`)"
-            class="portfolio-item animate__animated animate__fadeInUp"
-            @click="$router.push(`/portfolio/altai`)"
-          >
-            <picture>
-              <source
-                srcset="../images/portfolio/altai-cover.webp"
-                type="image/webp"
-              />
-              <img
-                v-lazy
-                src="../images/lazy-small.jpeg"
-                class="portfolio-item__img"
-                :data-src="require('../images/portfolio/altai-cover.jpg')"
-                alt="altai"
-                height="400"
-              />
-            </picture>
-            <figcaption class="portfolio-item__text">
-              Ару Алтай - туристический комплекс
-            </figcaption>
-          </figure>
-
-          <button class="btn portfolio__btn" @click="$router.push('/contact')">
-            связаться со мной
-          </button>
         </div>
+        <button class="btn portfolio__btn" @click="$router.push('/contact')">
+          связаться со мной
+        </button>
       </div>
     </section>
   </main>
