@@ -149,10 +149,34 @@
             </figcaption>
           </figure>
 
-          <button class="btn portfolio__btn" @click="$router.push('/contact')">
-            связаться со мной
-          </button>
+          <figure
+            tabindex="0"
+            @keypress="$router.push(`/portfolio/luka`)"
+            class="portfolio-item animate__animated animate__fadeInUp"
+            @click="$router.push(`/portfolio/luka`)"
+          >
+            <picture>
+              <source
+                srcset="../images/portfolio/luka-cover.webp"
+                type="image/webp"
+              />
+              <img
+                v-lazy
+                src="../images/lazy-small.jpeg"
+                class="portfolio-item__img"
+                :data-src="require('../images/portfolio/luka-cover.jpg')"
+                alt="altai"
+                height="400"
+              />
+            </picture>
+            <figcaption class="portfolio-item__text">
+              Святой Лука - византийский хор
+            </figcaption>
+          </figure>
         </div>
+        <button class="btn portfolio__btn" @click="$router.push('/contact')">
+          связаться со мной
+        </button>
       </div>
     </section>
   </main>

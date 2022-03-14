@@ -1,7 +1,0 @@
-@font-face {
-  font-family: "adlery-pro-swash";
-  src: url("./Adlery-Swash-trial.ttf") format("woff"),
-    url("./Adlery-Swash-trial.ttf") format("opentype"),
-    url("./Adlery-Swash-trial.ttf") format("truetype");
-  font-display: swap;
-}
